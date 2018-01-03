@@ -60,6 +60,7 @@ RUN apt-get update -q \
   && rbenv install 2.3.3 \
   && rbenv install 2.2.3 \
   && rbenv install 2.2.5 \
+  && rbenv install 2.4.3 \
   && rm -rf /var/lib/apt/lists
 
 RUN rbenv global 2.2.5
@@ -67,6 +68,8 @@ RUN gem install --no-ri --no-rdoc bundler
 RUN rbenv global 2.2.3
 RUN gem install --no-ri --no-rdoc bundler
 RUN rbenv global 2.3.3
+RUN gem install --no-ri --no-rdoc bundler
+RUN rbenv global 2.4.3
 RUN gem install --no-ri --no-rdoc bundler
 RUN rbenv rehash
 
