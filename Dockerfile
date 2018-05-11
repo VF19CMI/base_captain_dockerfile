@@ -104,3 +104,5 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54; \
         echo "deb https://dist.crystal-lang.org/apt crystal main" > /etc/apt/sources.list.d/crystal.list; \
         apt-get update; \
         sudo apt-get install -y crystal;
+
+RUN sudo apt-get install -y sqlite3 libsqlite3-dev
